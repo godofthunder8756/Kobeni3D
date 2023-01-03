@@ -81,5 +81,7 @@ public class ObjectLoader {
             GL30.glDeleteVertexArrays(vao);
         for(int vbo : vbos)
             GL30.glDeleteBuffers(vbo);
+        for(int texture : textures)
+            GL11.glDeleteTextures(texture);
     }
 }
