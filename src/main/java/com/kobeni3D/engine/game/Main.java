@@ -2,7 +2,7 @@ package com.kobeni3D.engine.game;
 
 import com.kobeni3D.engine.core.EngineManager;
 import com.kobeni3D.engine.core.WindowManager;
-import com.kobeni3D.engine.core.utils.Consts;
+import com.kobeni3D.engine.utils.Consts;
 
 public class Main {
     private static WindowManager window;

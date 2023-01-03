@@ -1,6 +1,6 @@
 package com.kobeni3D.engine.core;
 
-import com.kobeni3D.engine.core.utils.Consts;
+import com.kobeni3D.engine.utils.Consts;
 import com.kobeni3D.engine.game.Main;
 import org.lwjgl.glfw.GLFW;
 import org.lwjgl.glfw.GLFWErrorCallback;

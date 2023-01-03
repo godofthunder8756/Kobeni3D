@@ -1,7 +1,7 @@
 package com.kobeni3D.engine.core;
 
 import com.kobeni3D.engine.core.entity.Model;
-import com.kobeni3D.engine.core.utils.Utils;
+import com.kobeni3D.engine.utils.Utils;
 import org.lwjgl.opengl.GL11;
 import org.lwjgl.opengl.GL15;
 import org.lwjgl.opengl.GL20;

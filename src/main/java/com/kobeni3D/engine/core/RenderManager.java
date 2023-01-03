@@ -1,7 +1,7 @@
 package com.kobeni3D.engine.core;
 
-import com.kobeni3D.engine.core.utils.Transformation;
-import com.kobeni3D.engine.core.utils.Utils;
+import com.kobeni3D.engine.utils.Transformation;
+import com.kobeni3D.engine.utils.Utils;
 import com.kobeni3D.engine.core.entity.Entity;
 import com.kobeni3D.engine.game.Main;
 import org.lwjgl.opengl.GL11;

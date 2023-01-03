@@ -1,4 +1,4 @@
-package com.kobeni3D.engine.core.utils;
+package com.kobeni3D.engine.utils;
 
 import com.kobeni3D.engine.core.Camera;
 import com.kobeni3D.engine.core.entity.Entity;

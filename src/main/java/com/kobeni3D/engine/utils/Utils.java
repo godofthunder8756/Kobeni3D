@@ -1,4 +1,4 @@
-package com.kobeni3D.engine.core.utils;
+package com.kobeni3D.engine.utils;
 
 import org.lwjgl.system.MemoryUtil;
 
