@@ -1,10 +1,9 @@
-package com.kobeni3D.core;
+package com.kobeni3D.engine.core;
 
-import com.kobeni3D.Launcher;
-import com.kobeni3D.core.entity.Entity;
-import com.kobeni3D.core.entity.Model;
-import com.kobeni3D.core.utils.Transformation;
-import com.kobeni3D.core.utils.Utils;
+import com.kobeni3D.engine.core.utils.Transformation;
+import com.kobeni3D.engine.core.utils.Utils;
+import com.kobeni3D.engine.core.entity.Entity;
+import com.kobeni3D.engine.game.Main;
 import org.lwjgl.opengl.GL11;
 import org.lwjgl.opengl.GL13;
 import org.lwjgl.opengl.GL20;
@@ -15,7 +14,7 @@ public class RenderManager {
     private ShaderManager shader;
 
     public RenderManager(){
-        window = Launcher.getWindow();
+        window = Main.getWindow();
     }
     public void init() throws Exception{
         shader = new ShaderManager();

@@ -1,10 +1,10 @@
-package com.kobeni3D.test;
+package com.kobeni3D.engine.game;
 
-import com.kobeni3D.Launcher;
-import com.kobeni3D.core.*;
-import com.kobeni3D.core.entity.Entity;
-import com.kobeni3D.core.entity.Model;
-import com.kobeni3D.core.entity.Texture;
+import com.kobeni3D.engine.core.*;
+import com.kobeni3D.engine.core.*;
+import com.kobeni3D.engine.core.entity.Entity;
+import com.kobeni3D.engine.core.entity.Model;
+import com.kobeni3D.engine.core.entity.Texture;
 import org.joml.Vector3f;
 import org.lwjgl.glfw.GLFW;
 import org.lwjgl.opengl.GL11;
@@ -24,7 +24,7 @@ public class TestGame implements ILogic {
 
     public TestGame() {
         renderer = new RenderManager();
-        window = Launcher.getWindow();
+        window = Main.getWindow();
         loader = new ObjectLoader();
         camera = new Camera();
         cameraInc = new Vector3f(0,0,0);

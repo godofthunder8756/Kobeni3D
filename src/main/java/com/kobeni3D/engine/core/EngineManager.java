@@ -1,7 +1,7 @@
-package com.kobeni3D.core;
+package com.kobeni3D.engine.core;
 
-import com.kobeni3D.Launcher;
-import com.kobeni3D.core.utils.Consts;
+import com.kobeni3D.engine.core.utils.Consts;
+import com.kobeni3D.engine.game.Main;
 import org.lwjgl.glfw.GLFW;
 import org.lwjgl.glfw.GLFWErrorCallback;
 
@@ -20,8 +20,8 @@ public class EngineManager {
 
     private void init() throws Exception{
         GLFW.glfwSetErrorCallback(errorCallback = GLFWErrorCallback.createPrint(System.err));
-        window = Launcher.getWindow();
-        gameLogic = Launcher.getGame();
+        window = Main.getWindow();
+        gameLogic = Main.getGame();
         window.init();
         gameLogic.init();
     }

@@ -1,4 +1,4 @@
-package com.kobeni3D.core;
+package com.kobeni3D.engine.core;
 
 public interface ILogic {
     void init() throws Exception;

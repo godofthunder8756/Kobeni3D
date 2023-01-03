@@ -1,7 +1,7 @@
-package com.kobeni3D.core.utils;
+package com.kobeni3D.engine.core.utils;
 
-import com.kobeni3D.core.Camera;
-import com.kobeni3D.core.entity.Entity;
+import com.kobeni3D.engine.core.Camera;
+import com.kobeni3D.engine.core.entity.Entity;
 import org.joml.Matrix4f;
 import org.joml.Vector3f;
 

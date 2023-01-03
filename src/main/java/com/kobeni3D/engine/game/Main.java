@@ -1,12 +1,10 @@
-package com.kobeni3D;
+package com.kobeni3D.engine.game;
 
-import com.kobeni3D.core.EngineManager;
-import com.kobeni3D.core.WindowManager;
-import com.kobeni3D.core.utils.Consts;
-import com.kobeni3D.test.TestGame;
-import org.lwjgl.Version;
+import com.kobeni3D.engine.core.EngineManager;
+import com.kobeni3D.engine.core.WindowManager;
+import com.kobeni3D.engine.core.utils.Consts;
 
-public class Launcher {
+public class Main {
     private static WindowManager window;
     private static TestGame game;
     public static void main(String[] args){

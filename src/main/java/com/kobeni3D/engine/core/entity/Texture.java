@@ -1,4 +1,4 @@
-package com.kobeni3D.core.entity;
+package com.kobeni3D.engine.core.entity;
 
 public class Texture {
     private final int id;

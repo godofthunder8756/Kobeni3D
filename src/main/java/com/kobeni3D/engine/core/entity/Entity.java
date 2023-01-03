@@ -1,4 +1,4 @@
-package com.kobeni3D.core.entity;
+package com.kobeni3D.engine.core.entity;
 
 import org.joml.Vector3f;
 public class Entity {

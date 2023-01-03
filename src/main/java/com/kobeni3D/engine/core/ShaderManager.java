@@ -1,4 +1,4 @@
-package com.kobeni3D.core;
+package com.kobeni3D.engine.core;
 
 import org.joml.Matrix4f;
 import org.joml.Vector3f;
