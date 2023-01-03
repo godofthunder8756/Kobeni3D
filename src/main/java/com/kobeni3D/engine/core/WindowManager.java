@@ -135,7 +135,7 @@ public class WindowManager {
         return height;
     }
 
-    public long getWindow() {
+    public long getWindowHandler() {
         return window;
     }
 

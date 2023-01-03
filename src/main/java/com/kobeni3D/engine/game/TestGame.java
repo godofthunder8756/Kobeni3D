@@ -5,6 +5,7 @@ import com.kobeni3D.engine.core.*;
 import com.kobeni3D.engine.core.entity.Entity;
 import com.kobeni3D.engine.core.entity.Model;
 import com.kobeni3D.engine.core.entity.Texture;
+import org.joml.Vector2f;
 import org.joml.Vector3f;
 import org.lwjgl.glfw.GLFW;
 import org.lwjgl.opengl.GL11;
@@ -12,7 +13,7 @@ import org.lwjgl.opengl.GL11;
 public class TestGame implements ILogic {
 
     private static final float CAMERA_MOVE_SPEED = 0.05f;
-
+    private static final float MOUSE_SENSITIVITY = 0.02f;
     private final RenderManager renderer;
     private final ObjectLoader loader;
     private final WindowManager window;
@@ -108,8 +109,12 @@ public class TestGame implements ILogic {
     }
 
     @Override
-    public void update() {
+    public void update(float interval, MouseInput mouseInput) {
         camera.movePosition(cameraInc.x * CAMERA_MOVE_SPEED, cameraInc.y * CAMERA_MOVE_SPEED, cameraInc.z * CAMERA_MOVE_SPEED);
+        if(mouseInput.isRightButtonPress()){
+            Vector2f rotVec = mouseInput.getDisplVec();
+            camera.movePosition(rotVec.x * MOUSE_SENSITIVITY, rotVec.y * MOUSE_SENSITIVITY, 0);
+        }
         entity.incRotation(0.0f,0.5f, 0.0f);
     }
 
