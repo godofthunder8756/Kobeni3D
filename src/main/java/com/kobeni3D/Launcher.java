@@ -16,7 +16,7 @@ public class Launcher {
         try{
             engine.start();
         }catch (Exception e){
-
+            e.printStackTrace();
         }
     }
 

@@ -1,6 +1,6 @@
 #version 400 core
 
-in vec3 fragTextureCoord;
+in vec2 fragTextureCoord;
 
 out vec4 fragColor;
 
