@@ -33,61 +33,11 @@ public class TestGame implements ILogic {
     @Override
     public void init() throws Exception {
         renderer.init();
-        float[] vertices = new float[] {
-                -0.5f, 0.5f, 0.5f,
-                -0.5f, -0.5f, 0.5f,
-                0.5f, -0.5f, 0.5f,
-                0.5f, 0.5f, 0.5f,
-                -0.5f, 0.5f, -0.5f,
-                0.5f, 0.5f, -0.5f,
-                -0.5f, -0.5f, -0.5f,
-                0.5f, -0.5f, -0.5f,
-                -0.5f, 0.5f, -0.5f,
-                0.5f, 0.5f, -0.5f,
-                -0.5f, 0.5f, 0.5f,
-                0.5f, 0.5f, 0.5f,
-                0.5f, 0.5f, 0.5f,
-                0.5f, -0.5f, 0.5f,
-                -0.5f, 0.5f, 0.5f,
-                -0.5f, -0.5f, 0.5f,
-                -0.5f, -0.5f, -0.5f,
-                0.5f, -0.5f, -0.5f,
-                -0.5f, -0.5f, 0.5f,
-                0.5f, -0.5f, 0.5f,
-        };
-        float[] textCoords = new float[]{
-                0.0f, 0.0f,
-                0.0f, 0.5f,
-                0.5f, 0.5f,
-                0.5f, 0.0f,
-                0.0f, 0.0f,
-                0.5f, 0.0f,
-                0.0f, 0.5f,
-                0.5f, 0.5f,
-                0.0f, 0.5f,
-                0.5f, 0.5f,
-                0.0f, 1.0f,
-                0.5f, 1.0f,
-                0.0f, 0.0f,
-                0.0f, 0.5f,
-                0.5f, 0.0f,
-                0.5f, 0.5f,
-                0.5f, 0.0f,
-                1.0f, 0.0f,
-                0.5f, 0.5f,
-                1.0f, 0.5f,
-        };
-        int[] indices = new int[]{
-                0, 1, 3, 3, 1, 2,
-                8, 10, 11, 9, 8, 11,
-                12, 13, 7, 5, 12, 7,
-                14, 15, 6, 4, 14, 6,
-                16, 18, 19, 17, 16, 19,
-                4, 6, 7, 5, 4, 7,
-        };
 
-        Model model = loader.loadModel(vertices, textCoords, indices);
-        model.setTexture(new Texture(loader.loadTexture("textures/grassblock.png")));
+
+
+        Model model = loader.loadOBJModel("/models/bunny.obj");
+        model.setTexture(new Texture(loader.loadTexture("textures/grassblock.png")), 1f);
         entity = new Entity(model, new Vector3f(0,0,-5), new Vector3f(0,0,0), 1);
     }
 
@@ -115,16 +65,15 @@ public class TestGame implements ILogic {
             Vector2f rotVec = mouseInput.getDisplVec();
             camera.movePosition(rotVec.x * MOUSE_SENSITIVITY, rotVec.y * MOUSE_SENSITIVITY, 0);
         }
-        entity.incRotation(0.0f,0.5f, 0.0f);
+        entity.incRotation(0.0f,0.25f, 0.0f);
     }
 
     @Override
     public void render() {
-        if(window.isResize()){
-            GL11.glViewport(0,0,window.getWidth(),window.getHeight());
-            window.setResize(true);
-        }
-        window.setClearColor(0.0f,0.0f,0.0f,0.0f);
+//        if(window.isResize()){
+//            GL11.glViewport(0,0,window.getWidth(),window.getHeight());
+//            window.setResize(true);
+//        }
         renderer.render(entity, camera);
     }
 

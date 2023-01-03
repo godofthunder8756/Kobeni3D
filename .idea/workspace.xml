@@ -5,12 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fc68eb63-989e-444f-b6ba-66f42655cbab" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/kobeni3D/engine/core/entity/Material.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kobeni3D/engine/core/EngineManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kobeni3D/engine/core/EngineManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kobeni3D/engine/core/ILogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kobeni3D/engine/core/ILogic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kobeni3D/engine/core/MouseInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kobeni3D/engine/core/MouseInput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kobeni3D/engine/core/ObjectLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kobeni3D/engine/core/ObjectLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kobeni3D/engine/core/RenderManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kobeni3D/engine/core/RenderManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kobeni3D/engine/core/ShaderManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kobeni3D/engine/core/ShaderManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/kobeni3D/engine/core/WindowManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kobeni3D/engine/core/WindowManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kobeni3D/engine/core/entity/Model.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kobeni3D/engine/core/entity/Model.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kobeni3D/engine/game/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kobeni3D/engine/game/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/kobeni3D/engine/game/TestGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kobeni3D/engine/game/TestGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kobeni3D/engine/utils/Consts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kobeni3D/engine/utils/Consts.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kobeni3D/engine/utils/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kobeni3D/engine/utils/Utils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/shaders/fragment.fs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/shaders/fragment.fs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/shaders/vertex.vs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/shaders/vertex.vs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
